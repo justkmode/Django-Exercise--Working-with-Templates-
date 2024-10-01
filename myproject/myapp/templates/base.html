@@ -1,0 +1,32 @@
+{% load static %} <!-- Load the static tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include 'partials/_header.html' %}
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+    <footer>
+        <!-- Footer content -->
+        <div class="footer-content"></div>
+        <p>&copy; 2024 Little Lemon. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@littlelemon.com">info@littlelemon.com</a></p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+    </div>
+    </footer>
+</body>
+</html>
